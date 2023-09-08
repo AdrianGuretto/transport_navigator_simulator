@@ -1,0 +1,87 @@
+{
+    "base_requests": [
+        {
+            "is_roundtrip": false,
+            "name": "999",
+            "stops": [
+                "Voron",
+                "Nao"
+            ],
+            "type": "Bus"
+        },
+        {
+            "latitude": 55.574371,
+            "longitude": 37.6517,
+            "name": "Nao",
+            "road_distances": {
+                "Voron": 2600
+            },
+            "type": "Stop"
+        },
+        {
+            "latitude": 55.587655,
+            "longitude": 37.645687,
+            "name": "Voron",
+            "road_distances": {
+                "Nao": 1380
+            },
+            "type": "Stop"
+        }
+    ],
+    "render_settings": {
+        "bus_label_font_size": 20,
+        "bus_label_offset": [
+            7,
+            15
+        ],
+        "color_palette": [
+            "green",
+            [
+                255,
+                160,
+                0
+            ],
+            "red"
+        ],
+        "height": 200,
+        "line_width": 14,
+        "padding": 30,
+        "stop_label_font_size": 20,
+        "stop_label_offset": [
+            7,
+            -3
+        ],
+        "stop_radius": 5,
+        "underlayer_color": [
+            255,
+            255,
+            255,
+            0.85
+        ],
+        "underlayer_width": 3,
+        "width": 200
+    },
+    "routing_settings": {
+        "bus_velocity": 40,
+        "bus_wait_time": 6
+    },
+    "stat_requests": [
+        {
+            "id": 1,
+            "name": "999",
+            "type": "Bus"
+        },
+        {
+            "from": "Voron",
+            "id": 4,
+            "to": "Nao",
+            "type": "Route"
+        },
+        {
+            "from": "Nao",
+            "id": 5,
+            "to": "Voron",
+            "type": "Route"
+        }
+    ]
+}
